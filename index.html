@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <section id="todo">
+        <h2>Todo-list</h2>
+        <div class="project">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Add new Todo" required>
+                <button type="submit">Submit</button>
+            </form>
+            <ul id="Todo-list"></ul>
+        </div>
+    </section>
+    <script>
+
+        let todo = document.getElementById('todo-form')
+        const input=document.getElementById('todo-input')
+        todo.addEventListener('submit',function(e){
+            e.preventDefault();
+            const newTask= input.value.trim();
+            if(newTask){
+                addTask(newTask);
+                input.value='';
+            }
+            function addTask(task){
+                const li=document.createElement('li')
+                li.textContent(task);
+                const delete
+            }
+        })
+
+    </script>
+</body>
+
+</html>
